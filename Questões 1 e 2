@@ -1,0 +1,64 @@
+EXERCÍCIO 1
+<! DOCTYPE html>
+<html>
+
+<body>
+    <form name = "form" action = "" method = "get">
+        <input type = "number" name = "number" id = "number" value = "fnumber">
+        <input type = "submit" name = "submit" value = "Clique aqui" />
+    </form>
+    <? php
+    $ number = $ _GET ['fnumber'];
+    if ($ number% 2 == 0) {
+        echo "Numero Par";
+    } senão {
+        echo "Numero Impar";
+    }
+    if ($ número> 0) {
+        echo "Numero Positivo";
+    } senão {
+        echo "Numero negativo";
+    }
+
+    ?>
+
+</body>
+
+</html>
+
+
+
+EXERCÍCIO 2 
+<! DOCTYPE html>
+<html>
+
+<body>
+<form action = "number2.php" method = "post">
+    
+    <input type = "number" name = "number1" id = "A" value = "A">
+    <input type = "number" name = "number2" id = "B" value = "B">
+    <input type = "submit" name = "my_form_submit_button" 
+           valor = "Clique aqui" />
+
+    </form>
+</form>
+   <? php
+   $ A = $ _POST ['A'];
+   $ B = $ _POST ['B'];
+   
+   $ array = [$ A, $ B];
+       echo "0";
+       echo $ B;
+       $ I = 1;
+       $ c1 = $ B;
+       enquanto ($ i <$ array [0]) {
+        
+        echo "";
+        $ B + = c1 $;
+        echo $ B;
+        $ I ++;
+       }
+       ?>
+</body>
+
+</html>
